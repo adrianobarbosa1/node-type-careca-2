@@ -10,7 +10,6 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
-    "test:staged": "npm test -- --findRealatedTests",
     "test:coverage": "npm test -- --coverage",
     "prepare": "husky install"
   },

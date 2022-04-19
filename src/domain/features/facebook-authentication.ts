@@ -1,11 +1,11 @@
-import { AccessToken } from '../models'
 import { AuthenticationError } from '../errors'
+import { AccessToken } from '../models'
 
 export interface FacebookAuthentication {
-  execute: (params: FacebookAuthentication.Params) => Promise<FacebookAuthentication.Result>
+  perform: (params: FacebookAuthentication.Params) => Promise<FacebookAuthentication.Result>
 }
 
-namespace FacebookAuthentication{
+export namespace FacebookAuthentication {
   export type Params = {
     token: string
   }
